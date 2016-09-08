@@ -15,6 +15,8 @@ namespace Entity
         public Gender Gender { get; set; }
         public Breed Breed { get; set; }
         public Color Color { get; set; }
+        public List<Deworming> Dewormings { get; set; }
+        public List<Vaccine> Vaccines { get; set; }
 
         public Dog() { }
         public Dog(string NameReal, string NameFormal, DateTime BirthDate, Gender Gender, Breed Breed, Color Color)

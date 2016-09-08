@@ -7,6 +7,6 @@ namespace Entity.Enums
     {
         [Description("Caniche Toy")] CANICHE,
         [Description("Maltes")] MALTES,
-        [Description("Bulldog Francés")] BULLDOG
+        [Description("Bulldog Francés")] FRENCH_BULLDOG
     }
 }
