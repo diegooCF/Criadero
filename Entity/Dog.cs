@@ -9,7 +9,7 @@ namespace Entity
 {
     public class Dog
     {
-        public string NameReal { get; set; }
+        public string NameReal { get; set; } //Can be null
         public string NameFormal { get; set; }
         public DateTime BirthDate { get; set; }
         public Gender Gender { get; set; }
@@ -27,6 +27,9 @@ namespace Entity
             this.Gender = Gender;
             this.Breed = Breed;
             this.Color = Color;
+
+            Dewormings = new List<Deworming>();
+            Vaccines = new List<Vaccine>();
         }
     }
 }
