@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
-            this.txtFormalName = new System.Windows.Forms.TextBox();
-            this.cboBreed = new System.Windows.Forms.ComboBox();
-            this.cboGender = new System.Windows.Forms.ComboBox();
             this.cboColor = new System.Windows.Forms.ComboBox();
+            this.cboGender = new System.Windows.Forms.ComboBox();
+            this.cboBreed = new System.Windows.Forms.ComboBox();
+            this.txtFormalName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cboMother = new System.Windows.Forms.ComboBox();
@@ -56,49 +56,48 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.Controls.Add(this.btnAdd, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnCancel, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnCancel, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnAdd, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 298);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(301, 38);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(249, 38);
             this.tableLayoutPanel2.TabIndex = 8;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.Location = new System.Drawing.Point(203, 3);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(95, 32);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Añadir";
-            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(103, 3);
+            this.btnCancel.Location = new System.Drawing.Point(3, 3);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 32);
-            this.btnCancel.TabIndex = 0;
+            this.btnCancel.Size = new System.Drawing.Size(118, 32);
+            this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Location = new System.Drawing.Point(127, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(119, 32);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Añadir";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.53489F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.46511F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.cboColor, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.cboGender, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.cboBreed, 1, 3);
@@ -129,48 +128,47 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.964413F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.964413F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.2847F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(301, 280);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(249, 280);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
-            // label2
+            // cboColor
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre Formal:";
+            this.cboColor.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboColor.FormattingEnabled = true;
+            this.cboColor.Location = new System.Drawing.Point(120, 138);
+            this.cboColor.Name = "cboColor";
+            this.cboColor.Size = new System.Drawing.Size(121, 21);
+            this.cboColor.TabIndex = 5;
             // 
-            // label3
+            // cboGender
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Raza:";
+            this.cboGender.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Location = new System.Drawing.Point(120, 111);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(121, 21);
+            this.cboGender.TabIndex = 4;
             // 
-            // label4
+            // cboBreed
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Género:";
+            this.cboBreed.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboBreed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBreed.FormattingEnabled = true;
+            this.cboBreed.Location = new System.Drawing.Point(120, 84);
+            this.cboBreed.Name = "cboBreed";
+            this.cboBreed.Size = new System.Drawing.Size(121, 21);
+            this.cboBreed.TabIndex = 3;
             // 
-            // label5
+            // txtFormalName
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 142);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Color:";
+            this.txtFormalName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtFormalName.Location = new System.Drawing.Point(120, 4);
+            this.txtFormalName.Multiline = true;
+            this.txtFormalName.Name = "txtFormalName";
+            this.txtFormalName.Size = new System.Drawing.Size(121, 18);
+            this.txtFormalName.TabIndex = 0;
             // 
             // label6
             // 
@@ -182,50 +180,54 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Fecha de Nacimiento:";
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre Formal:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Color:";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Género:";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Raza:";
+            // 
             // dtpBirthDate
             // 
             this.dtpBirthDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthDate.Location = new System.Drawing.Point(122, 165);
+            this.dtpBirthDate.Location = new System.Drawing.Point(120, 165);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(121, 20);
             this.dtpBirthDate.TabIndex = 6;
-            // 
-            // txtFormalName
-            // 
-            this.txtFormalName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtFormalName.Location = new System.Drawing.Point(122, 4);
-            this.txtFormalName.Multiline = true;
-            this.txtFormalName.Name = "txtFormalName";
-            this.txtFormalName.Size = new System.Drawing.Size(176, 18);
-            this.txtFormalName.TabIndex = 9;
-            // 
-            // cboBreed
-            // 
-            this.cboBreed.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboBreed.FormattingEnabled = true;
-            this.cboBreed.Location = new System.Drawing.Point(122, 84);
-            this.cboBreed.Name = "cboBreed";
-            this.cboBreed.Size = new System.Drawing.Size(121, 21);
-            this.cboBreed.TabIndex = 10;
-            // 
-            // cboGender
-            // 
-            this.cboGender.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboGender.FormattingEnabled = true;
-            this.cboGender.Location = new System.Drawing.Point(122, 111);
-            this.cboGender.Name = "cboGender";
-            this.cboGender.Size = new System.Drawing.Size(121, 21);
-            this.cboGender.TabIndex = 11;
-            // 
-            // cboColor
-            // 
-            this.cboColor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboColor.FormattingEnabled = true;
-            this.cboColor.Location = new System.Drawing.Point(122, 138);
-            this.cboColor.Name = "cboColor";
-            this.cboColor.Size = new System.Drawing.Size(121, 21);
-            this.cboColor.TabIndex = 12;
             // 
             // label1
             // 
@@ -250,20 +252,22 @@
             // cboMother
             // 
             this.cboMother.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboMother.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMother.FormattingEnabled = true;
-            this.cboMother.Location = new System.Drawing.Point(122, 30);
+            this.cboMother.Location = new System.Drawing.Point(120, 30);
             this.cboMother.Name = "cboMother";
             this.cboMother.Size = new System.Drawing.Size(121, 21);
-            this.cboMother.TabIndex = 10;
+            this.cboMother.TabIndex = 1;
             // 
             // cboFather
             // 
             this.cboFather.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboFather.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFather.FormattingEnabled = true;
-            this.cboFather.Location = new System.Drawing.Point(122, 57);
+            this.cboFather.Location = new System.Drawing.Point(120, 57);
             this.cboFather.Name = "cboFather";
             this.cboFather.Size = new System.Drawing.Size(121, 21);
-            this.cboFather.TabIndex = 10;
+            this.cboFather.TabIndex = 2;
             // 
             // label8
             // 
@@ -288,26 +292,28 @@
             // txtComments
             // 
             this.txtComments.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtComments.Location = new System.Drawing.Point(122, 219);
+            this.txtComments.Location = new System.Drawing.Point(120, 219);
             this.txtComments.Multiline = true;
             this.txtComments.Name = "txtComments";
-            this.txtComments.Size = new System.Drawing.Size(176, 58);
-            this.txtComments.TabIndex = 9;
+            this.txtComments.Size = new System.Drawing.Size(121, 58);
+            this.txtComments.TabIndex = 8;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Location = new System.Drawing.Point(122, 193);
+            this.textBox1.Location = new System.Drawing.Point(120, 193);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 18);
-            this.textBox1.TabIndex = 9;
+            this.textBox1.TabIndex = 7;
             // 
             // PuppyAdd
             // 
-            this.ClientSize = new System.Drawing.Size(325, 348);
+            this.ClientSize = new System.Drawing.Size(275, 348);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "PuppyAdd";
             this.Text = "Añadir nuevo cachorro";
             this.tableLayoutPanel2.ResumeLayout(false);

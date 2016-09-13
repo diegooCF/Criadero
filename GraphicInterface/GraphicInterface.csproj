@@ -58,6 +58,18 @@
     <Compile Include="Add\PuppyAdd.Designer.cs">
       <DependentUpon>PuppyAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add\ServiceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\ServiceAdd.Designer.cs">
+      <DependentUpon>ServiceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\ZealAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\ZealAdd.Designer.cs">
+      <DependentUpon>ZealAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add\PuppyAdd.resx">
       <DependentUpon>PuppyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\ServiceAdd.resx">
+      <DependentUpon>ServiceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\ZealAdd.resx">
+      <DependentUpon>ZealAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>

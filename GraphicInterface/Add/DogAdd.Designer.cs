@@ -42,8 +42,8 @@
             this.cboGender = new System.Windows.Forms.ComboBox();
             this.cboColor = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -101,8 +101,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.53489F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.46511F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -124,25 +124,25 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(301, 150);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(247, 150);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // txtRealName
             // 
             this.txtRealName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtRealName.Location = new System.Drawing.Point(122, 3);
+            this.txtRealName.Location = new System.Drawing.Point(120, 3);
             this.txtRealName.Multiline = true;
             this.txtRealName.Name = "txtRealName";
-            this.txtRealName.Size = new System.Drawing.Size(176, 18);
+            this.txtRealName.Size = new System.Drawing.Size(121, 18);
             this.txtRealName.TabIndex = 5;
             // 
             // txtFormalName
             // 
             this.txtFormalName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtFormalName.Location = new System.Drawing.Point(122, 27);
+            this.txtFormalName.Location = new System.Drawing.Point(120, 27);
             this.txtFormalName.Multiline = true;
             this.txtFormalName.Name = "txtFormalName";
-            this.txtFormalName.Size = new System.Drawing.Size(176, 18);
+            this.txtFormalName.Size = new System.Drawing.Size(121, 18);
             this.txtFormalName.TabIndex = 5;
             // 
             // label6
@@ -159,7 +159,7 @@
             // 
             this.dtpBirthDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthDate.Location = new System.Drawing.Point(122, 125);
+            this.dtpBirthDate.Location = new System.Drawing.Point(120, 125);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(121, 20);
             this.dtpBirthDate.TabIndex = 6;
@@ -167,8 +167,9 @@
             // cboBreed
             // 
             this.cboBreed.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboBreed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBreed.FormattingEnabled = true;
-            this.cboBreed.Location = new System.Drawing.Point(122, 51);
+            this.cboBreed.Location = new System.Drawing.Point(120, 51);
             this.cboBreed.Name = "cboBreed";
             this.cboBreed.Size = new System.Drawing.Size(121, 21);
             this.cboBreed.TabIndex = 7;
@@ -176,8 +177,9 @@
             // cboGender
             // 
             this.cboGender.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGender.FormattingEnabled = true;
-            this.cboGender.Location = new System.Drawing.Point(122, 75);
+            this.cboGender.Location = new System.Drawing.Point(120, 75);
             this.cboGender.Name = "cboGender";
             this.cboGender.Size = new System.Drawing.Size(121, 21);
             this.cboGender.TabIndex = 7;
@@ -185,57 +187,57 @@
             // cboColor
             // 
             this.cboColor.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboColor.FormattingEnabled = true;
-            this.cboColor.Location = new System.Drawing.Point(122, 99);
+            this.cboColor.Location = new System.Drawing.Point(120, 99);
             this.cboColor.Name = "cboColor";
             this.cboColor.Size = new System.Drawing.Size(121, 21);
             this.cboColor.TabIndex = 7;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.Controls.Add(this.btnAdd, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnCancel, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnCancel, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnAdd, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 168);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(301, 38);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(247, 38);
             this.tableLayoutPanel2.TabIndex = 6;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.Location = new System.Drawing.Point(203, 3);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(95, 32);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Añadir";
-            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(103, 3);
+            this.btnCancel.Location = new System.Drawing.Point(3, 3);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 32);
+            this.btnCancel.Size = new System.Drawing.Size(117, 32);
             this.btnCancel.TabIndex = 0;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Location = new System.Drawing.Point(126, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(118, 32);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Añadir";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
             // DogAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 218);
+            this.ClientSize = new System.Drawing.Size(268, 218);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
