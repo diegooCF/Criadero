@@ -70,6 +70,12 @@
     <Compile Include="Add\ZealAdd.Designer.cs">
       <DependentUpon>ZealAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apply\DewormingApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply\DewormingApplication.Designer.cs">
+      <DependentUpon>DewormingApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apply\SupplyApplicationBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add\ZealAdd.resx">
       <DependentUpon>ZealAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply\DewormingApplication.resx">
+      <DependentUpon>DewormingApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apply\SupplyApplicationBase.resx">
       <DependentUpon>SupplyApplicationBase.cs</DependentUpon>

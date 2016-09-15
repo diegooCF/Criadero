@@ -1,6 +1,6 @@
 ﻿namespace GraphicInterface.Apply
 {
-    partial class VaccineApplication
+    partial class DewormingApplication
     {
         /// <summary>
         /// Required designer variable.
@@ -32,15 +32,15 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.Text = "Vacuna:";
+            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.Text = "Desparacitación:";
             // 
-            // VaccineApplication
+            // DewormingApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(251, 200);
-            this.Name = "VaccineApplication";
-            this.Text = "Aplicar vacuna";
+            this.Name = "DewormingApplication";
+            this.Text = "Aplicar desparacitación";
             this.ResumeLayout(false);
             this.PerformLayout();
 
