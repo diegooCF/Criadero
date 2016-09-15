@@ -16,7 +16,7 @@ namespace GraphicInterface
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Add.PuppyAdd());
+            Application.Run(new Apply.VaccineApplication());
         }
     }
 }
