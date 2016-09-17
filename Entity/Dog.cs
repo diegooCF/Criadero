@@ -15,8 +15,9 @@ namespace Entity
         public Gender Gender { get; set; }
         public Breed Breed { get; set; }
         public Color Color { get; set; }
-        public List<DewormingApplication> AppliedDewormings { get; set; }
-        public List<VaccineApplication> AppliedVaccines { get; set; }
+
+        private List<SupplyApplication<Deworming>> AppliedDewormings { get; set; }
+        private List<SupplyApplication<Vaccine>> AppliedVaccines { get; set; }
 
         public Dog() { }
         public Dog(string NameReal, string NameFormal, DateTime BirthDate, Gender Gender, Breed Breed, Color Color)
@@ -28,18 +29,26 @@ namespace Entity
             this.Breed = Breed;
             this.Color = Color;
 
-            AppliedDewormings = new List<DewormingApplication>();
-            AppliedVaccines = new List<VaccineApplication>();
+            AppliedDewormings = new List<SupplyApplication<Deworming>>();
+            AppliedVaccines = new List<SupplyApplication<Vaccine>>();
         }
 
-        public void applyVaccine(VaccineApplication application)
-        {
-            AppliedVaccines.Add(application);
-        }
-
-        public void applyDeworming(DewormingApplication application)
+        /// <summary>
+        /// Apply a new Deworming
+        /// </summary>
+        /// <param name="application">New Application with respective data</param>
+        public void applyDeworming(SupplyApplication<Deworming> application)
         {
             AppliedDewormings.Add(application);
         }
+
+        /// <summary>
+        /// Apply a new Vaccine
+        /// </summary>
+        /// <param name="application">New Application with respective data</param>
+        public void applyVaccine(SupplyApplication<Vaccine> application)
+        {
+            AppliedVaccines.Add(application);
+        }     
     }
 }

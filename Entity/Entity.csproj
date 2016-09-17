@@ -41,21 +41,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Deworming.cs" />
-    <Compile Include="DewormingApplication.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\Color.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Enums\Rating.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puppy.cs" />
-    <Compile Include="Service.cs" />
+    <Compile Include="ServiceSet.cs" />
     <Compile Include="Enums\Breed.cs" />
     <Compile Include="SupplyApplication.cs" />
     <Compile Include="Trades\Customer.cs" />
     <Compile Include="Trades\Purchase.cs" />
     <Compile Include="Enums\WayToPay.cs" />
     <Compile Include="Vaccine.cs" />
-    <Compile Include="VaccineApplication.cs" />
     <Compile Include="Zeal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
