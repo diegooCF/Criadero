@@ -45,8 +45,12 @@
     <Compile Include="Enums\Color.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Enums\Rating.cs" />
+    <Compile Include="Litter.cs" />
+    <Compile Include="Nativity.cs" />
+    <Compile Include="ProductionProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puppy.cs" />
+    <Compile Include="Service.cs" />
     <Compile Include="ServiceSet.cs" />
     <Compile Include="Enums\Breed.cs" />
     <Compile Include="SupplyApplication.cs" />

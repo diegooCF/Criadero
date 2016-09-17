@@ -10,23 +10,25 @@ namespace Entity
     {
         public Dog Male { get; set; }
         public Dog Female { get; set; }
-        public Zeal Zeal { get; set; }
-        public List<DateTime> Service { get; set; }
+        public DateTime StartDate { get; set; }
+        public List<Service> Services { get; set; }
         public string Comments { get; set; }
 
-        public ServiceSet() { }
-        public ServiceSet(Dog Male, Dog Female, Zeal Zeal, string Comments)
+        public ServiceSet(Dog Male, Dog Female, DateTime StartDate, string Comments)
         {
             this.Male = Male;
             this.Female = Female;
-            this.Zeal = Zeal;
+            this.StartDate = StartDate;
             this.Comments = Comments;
-            Service = new List<DateTime>();
+            Services = new List<Service>();
+
+            //We set the StartDate as FirstService
+            addService(new Service(Male, StartDate));
         } 
 
-        public void addService(DateTime dateService)
+        public void addService(Service Service)
         {
-            Service.Add(dateService);
+            Services.Add(Service);
         }
     }
 }
