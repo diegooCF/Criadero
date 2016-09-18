@@ -10,6 +10,7 @@ namespace Entity
     {
         public Dog Male { get; set; }
         public Dog Female { get; set; }
+        public Zeal Zeal { get; set; }
         public DateTime StartDate { get; set; }
         public List<Service> Services { get; set; }
         public string Comments { get; set; }

@@ -8,9 +8,23 @@ namespace Entity
 {
     public class Nativity
     {
-        public Litter Litter { get; set; }
-        public DateTime EstimatedDateStart { get; set; }
-        public string Comments { get; set; }
+        private Litter Litter { get; set; }
+        private DateTime EstimatedDateStart { get; set; }
+        private string Comments { get; set; }
 
+        /// <summary>
+        /// This constructor only receives a variable that especifies a possible Nativity
+        /// </summary>
+        /// <param name="EstimatedDateStart">Indicates the possible start date of the nativity</param>
+        public Nativity(DateTime EstimatedDateStart)
+        {
+            this.EstimatedDateStart = EstimatedDateStart;
+        }
+
+        public void finish(Litter litter, string Comments)
+        {
+            this.Litter = Litter;
+            this.Comments = Comments;
+        }
     }
 }
